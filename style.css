@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 35px;
+}
+.container {
+    background-color: palevioletred;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: 650px;
+    transition: all 0.4s;
+    position: relative;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    gap: 40px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    font-size: 3rem;
+    color: white;
+    font-family: sans-serif; 
+    white-space: nowrap; 
+}
+.text { 
+    margin-top: 0px;
+    font-size: 3rem;
+    color: white;
+    font-family: sans-serif; 
+    white-space: nowrap; 
+}
+button {
+    width: 136px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: darkolivegreen;
+}
+.card {
+    height: 60px;
+    background-color: green;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;   
+    display: none;
+    transition: all 0.4s;
+    overflow: hidden; 
+}
+.container:hover > .card {
+    display: flex; 
+    align-items: center; 
+} 
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px; 
+    flex-wrap: nowrap; 
+    overflow: hidden;
+} 
+.item1 {
+    height: 20px;
+    width: 800px; 
+    background-color: palevioletred;
+} 
+.item2 {
+    height: 20px;
+    width: 400px; 
+    background-color: white;
+} 
+.item3 {
+    height: 20px;
+    width: 200px; 
+    background-color: greenyellow; 
+} 
+.item4 {
+    font-size: 1.2rem;
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 20px;
+} 
+@media (max-width: 600px) {
+    .container {
+        height: 80vh; 
+        padding: 10px;
+    }
+    header {
+        padding: 10px;
+    }
+    nav {
+        gap: 20px;
+    }
+    nav a {
+        font-size: 18px;
+    }
+    .para {
+        font-size: 1.4rem; 
+        height: 30vh; 
+        font-family: sans-serif; 
+        white-space: nowrap;
+        margin-top: 150px;
+    }
+    .text {
+        font-size: 1.4rem; 
+        height: 30vh; 
+        font-family: sans-serif; 
+        white-space: nowrap;
+    }
+    button {
+        width: 100px; 
+        height: 35px; 
+    }
+    .card {
+        width: 100%;
+    }
+    .item {
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+    }
+    .item1 {
+        height: 20px;
+        width: 220px;
+    } 
+    .item2 {
+        height: 20px;
+        width: 160px; 
+    } 
+    .item3 {
+        height: 20px;
+        width: 110px; 
+    } 
+}
